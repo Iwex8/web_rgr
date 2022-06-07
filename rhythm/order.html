@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+		<title>Rhythm</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<script>function test() {
+			const urlParams = new URLSearchParams(window.location.search);
+			const myParam = urlParams.get('item__title');
+			alert(myParam);
+		  }</script>
+
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<a href="index.html" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html#store" class="menu__link">Магазин</a></li>
+							<li class="menu__item"><a href="index.html#categories" class="menu__link">Категорії</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Підтримка</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main class="page_book">
+                <section>
+                    <div class="order__container">
+						<div class="form_order">
+							<form class="order" name="order">
+								<h1 class="order__header">Замовлення</h1>
+								<br>
+								<br>
+								<div class="order__text texts" id="order_name">Вибрана гітара:</div>
+								<br>
+								<div class="order__text texts" id="order_price" style="color: black;">Ціна:</div>
+								<br>
+								<br>
+								<div class="info">
+	
+									<div class="div data">
+										<div class="order__text your_data" >Ваше ім’я</div>
+									<input class="order__input__field" type="text" id="inp_text" name="name" required="required">
+									<label class="mdl-textfield__label" for="inp_text">Обов’язково</label>
+									</div>
+	
+									<div class="data">
+										<div class="order__text your_data">Ваш email</div>
+										<input class="order__input__field" type="email" id="inp_text" name="email" required="required">
+										<label class="mdl-textfield__label" for="inp_text">Обов’язково</label>
+									</div>
+									
+									
+									<div class="data">
+										<div class="order__text your_data">Ваша адреса</div>
+										<input class="order__input__field" type="text" name="adress" id="inp_text" required="required">
+										<label class="mdl-textfield__label" for="inp_text">Обов’язково</label>
+									</div>
+									
+								</div>    
+								<div class="button">
+									<a href="" class="order__btn" >Замовити</a>
+									
+								</div>                       
+							</form>
+						</div>
+                    
+						<div class="guitar_img">
+							<img class="order__image" src="" id="order__img" alt="product__img">
+						</div>
+                    </div>
+                </section>
+                
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__body body-footer">
+						<div class="body-footer__column">
+							<a href="" class="body-footer__logo">
+								<img src="img/footer/logo.svg" alt="Footer Logo">
+							</a>
+							<ul class="body-footer__contacts contacts-footer">
+								<li class="contacts-footer__item">
+									<a href="mailto:enquiry@Rhythm.com" class="contacts-footer__link contacts-footer__link_mail">Enquiry@Rhythm.com</a>
+								</li>
+								<li class="contacts-footer__item">
+									<a href="#" class="contacts-footer__link contacts-footer__link_location">Львів</a>
+								</li>
+							</ul>
+						</div>
+						<div class="body-footer__column body-footer__column_full">
+							<nav class="body-footer__menu menu-footer">
+								<div class="menu-footer__column">
+									<div class="menu-footer__title">СТОРІНКИ</div>
+									<ul class="menu-footer__list">
+										<li class="menu-footer__item">
+											<a href="index.html#store" class="menu-footer__link">Магазин</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="index.html#categories" class="menu-footer__link">Категорії</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="" class="menu-footer__link">Підтримка</a>
+										</li>
+									</ul>
+								</div>
+								<div class="menu-footer__column">
+									<div class="menu-footer__title">ПРО НАС</div>
+									<ul class="menu-footer__list">
+										<li class="menu-footer__item">
+											<a href="" class="menu-footer__link">Умови</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="" class="menu-footer__link">Політика приватності</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+						<div class="body-footer__column">
+							<div class="body-footer__social social-footer">
+								<div class="social-footer__title">Стежте за нами</div>
+								<div class="social-footer__items">
+									<a href="" class="social-footer__item">
+										<img src="img/footer/social//01.svg" alt="">
+									</a>
+									<a href="" class="social-footer__item">
+										<img src="img/footer/social//02.svg" alt="">
+									</a>
+									<a href="" class="social-footer__item">
+										<img src="img/footer/social//03.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__copy">
+						© 2022 Rhythm
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="js/order.js"></script>
+	</body>
+</html>
